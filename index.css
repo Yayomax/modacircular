@@ -1,0 +1,55 @@
+body{
+    box-sizing: border-box;
+    margin:0;
+    
+}
+
+/*-------------------------HEADER-----------------------------*/
+
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:rgb(32, 25, 25);
+    color:#fff;
+    height: 10vh;
+}
+
+
+
+.nav-li{
+    padding: 0px 100px 0px 100px;
+    color:#fff;
+    text-decoration: none;
+    font-size:25px;
+}
+
+
+.title-container{
+    display: flex;
+    background-image:url(imagenmoda.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:0% 20%;
+    height: 30vh;
+    color:#000;
+    justify-content: center;
+}
+.titulo1{
+    margin: 0;
+    padding-top:10px;
+    font-size: 60px;
+    background-color: aqua;
+}
+
+.grid-container{
+    padding:50px 50px 0px 180px;
+    display: grid;
+    grid-template-columns: 500px 500px 500px;
+    grid-template-rows: 700px;
+    grid-gap:20px
+}
+
+.grid-item{
+    border:solid #000
+}
