@@ -1,29 +1,23 @@
 body{
     box-sizing: border-box;
     margin:0;
+    background-color: #1a1e23;
+    font-family: calibri;
     
 }
 
 /*-------------------------HEADER-----------------------------*/
-
+.logo{
+    width: 130px;
+}
 .header-container {
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
     align-items: center;
-    background-color:rgb(32, 25, 25);
+    background-color:#1a1e23;
     color:#fff;
-    height: 10vh;
+    height: 20vh;
 }
-
-
-
-.nav-li{
-    padding: 0px 100px 0px 100px;
-    color:#fff;
-    text-decoration: none;
-    font-size:25px;
-}
-
 
 .title-container{
     display: flex;
@@ -31,25 +25,93 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position:0% 20%;
-    height: 30vh;
+    height: 40vh;
     color:#000;
     justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 7px #fff;
 }
-.titulo1{
-    margin: 0;
-    padding-top:10px;
-    font-size: 60px;
-    background-color: aqua;
+.title-one{
+    margin:0;
+    padding:30px;
+    font-size: 80px;
+    font-weight: 900;
+    color:#000;
+    text-shadow: 2px 2px 10px #fff;
+    background-color:#ffffff10;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.title-two{
+    text-align:center;
+    color:#fff;
+    font-size: 40px;
+    text-shadow: 1px 1px 7px #fff;
+    padding-bottom: 30px;
+
 }
 
 .grid-container{
-    padding:50px 50px 0px 180px;
     display: grid;
-    grid-template-columns: 500px 500px 500px;
-    grid-template-rows: 700px;
-    grid-gap:20px
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px,300px));
+    grid-template-rows: 442px;
+    grid-gap:100px
 }
 
 .grid-item{
-    border:solid #000
+    border: none;
+    object-fit: cover;
+    border-radius: 40px;
+    transition-property: all;
+    transition-duration:1s ;
+}
+
+.title-vender{
+    margin: 0;
+    text-align: start;
+    text-shadow: 1px 1px 7px #fff;
+    color:#fff;
+    font-size: 40px;
+}
+
+.title-comprar{
+    margin: 0;
+    text-align: start;
+    text-shadow: 1px 1px 7px #fff;
+    color:#fff;
+    font-size: 40px;
+}
+
+.title-nolose{
+    margin: 0;
+    text-align: start;
+    text-shadow: 1px 1px 7px #fff;
+    color:#fff;
+    font-size: 40px;
+}
+
+.grid-item:hover{
+    transform: scale(1.2);
+}
+
+.image-one{
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    
+}
+
+.image-two{
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    
+}
+
+.image-three{
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
 }
