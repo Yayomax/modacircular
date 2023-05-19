@@ -1,25 +1,28 @@
 body{
     box-sizing: border-box;
     margin:0 0 0 55px;
-    background-color: var(--color-tema);
+    background-color: var(--color-tema);       /* Body*/
     font-family: calibri;
     padding-left:0;
     height: 150vh;
+    color:#fff
     
 }
 
-:root{
-    --color-tema:#1a1e23;
-    --color-rosa:#ff0077;
+:root{   /*Seccion de variables*/
+    --color-tema:#1a1e23;        /* variable Color gris / tema*/
+    --color-rosa:#ff0077;           /* variableColor rosa*/     
 }
-/*-----------------------Barra Lateral--------------------------------*/
+
+/*Para colocar estos colores se colocara: var(--color-rosa);       */
+
+/*-----------------------Barra Lateral-------------------------------------------------------------------------------------------------*/
 
 nav.menu-lateral{
     width: 50px;
     height: 100%;
-    background-color:#1a1e23 ;
+    background-color:#1a1e23 ;    
     padding: 40px 0 40px 4px;
-    box-shadow: 3px 0 0 var(--color-rosa);
     position: fixed;
     top:0;
     left:0;
@@ -46,7 +49,7 @@ nav.menu-lateral.expandir{
 ul{
     height: 100%;
     list-style-type: none;
-    padding: 0;
+    padding: 50px 0 50px 50px;
 }
 
 ul li.item-menu{
@@ -64,7 +67,7 @@ ul li.item-menu:hover{
 ul li.item-menu a{
     color:#fff;
     text-decoration:none;
-    font-size: 20px;
+    font-size: 16px;
     padding: 20px 4%;
     display: flex;
     margin-bottom:20px;
@@ -77,10 +80,10 @@ ul li.item-menu a .txt-link{
 }
 
 ul li.item-menu a .icon > i{
-    font-size: 30px;
+    font-size: 20px;
 }
 
-/*-------------------------HEADER-----------------------------*/
+/*-------------------------HEADER-----------------------------------------------------------------------------------------------------*/
 .logo{
     width: 130px;
 }
@@ -213,3 +216,10 @@ ul li.item-menu a .icon > i{
         text-align: center;
     }
 }
+
+
+
+
+
+
+/*-------------------VENTAS--------------------------------------------------------------------------------------------------*/
