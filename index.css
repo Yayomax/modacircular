@@ -368,3 +368,66 @@ ul li.item-menu a .icon > i{
 #atencion-al-cliente{
     text-align: center;
 }
+
+/* -------------Compas----------------- */
+
+.inicio-compras{
+    margin:70px 75px 0px 20px ;
+}
+
+.titulo-compra{
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 3px 3px 10px var(--color-rosa);
+}
+
+.container-items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px
+}
+
+.item{
+    border-radius: 20px;
+    transition-duration:0.5s ;
+}
+
+.item:hover{
+    box-shadow: 1px 1px 30px var(--color-rosa);
+}
+
+.item img{
+    width: 100%;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.item img:hover{
+    transform: scale(1.06);
+}
+
+.info-producto{
+    text-align: center;
+}
+
+.precio{
+    font-size:25px ;
+}
+
+.item button{
+    background-color: var(--color-rosa);
+    border:none;
+    border-radius: 20px;
+    color:#fff;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    text-shadow: 2px 2px 7px #000;
+    margin-bottom:20px ;
+    transition-property: box-shadow;
+    transition-duration:0.5s ;
+}
+
+.item button:hover{
+    box-shadow: 1px 1px 30px var(--color-rosa);
+}
