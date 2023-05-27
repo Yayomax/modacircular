@@ -431,3 +431,35 @@ ul li.item-menu a .icon > i{
 .item button:hover{
     box-shadow: 1px 1px 30px var(--color-rosa);
 }
+/* ------------------------------Ventas------------------------------- */
+.vende{
+    font-family: calibri;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fotov{
+    height: 250px;
+    width: auto;
+    border-radius: 20px;
+}
+.cajav{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.caja2v{
+    font-family: calibri;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    width: 45%;
+}
+@media only screen and (max-width:590px){
+    .cajav{
+        flex-wrap: wrap;
+    }
+    .caja2v{
+        width: 90%;
+    }
+}
