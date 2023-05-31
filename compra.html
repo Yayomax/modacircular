@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="index.css" >
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="icon" href="logo2.png">
+    <link rel="icon" href="logo4.png">
     <title>Moda</title>
 </head>
 <body>
@@ -45,7 +45,7 @@
 
     <header class="header-container">
         <a href="index.html" >
-            <img src="logo2.png" class="logo" >
+            <img src="logo4.png" class="logo" >
         </a>
     </header>
     <div class="title-container">
@@ -53,32 +53,79 @@
     </div>
     <div class="titulo-compra-container">
         <h2 class="titulo-compra">Nuestra Tienda</h2>
+        <div class="container-icon">
+            <div class="container-cart-icon">
+                <i class="bi bi-bag"></i>
+                <div class="count-products">
+                    <span id="contador-productos">0</span>
+                </div>
+            </div>
+            <div class="container-cart-products hidden-cart">
+                <div class="cart-product">
+                    <div class="info-cart-product">
+                        <span class="cantidad-producto-carrito">1</span>
+                        <p class="titulo-producto-carrito">Buzo Puma Power</p>
+                        <span class="precio-producto-carrito">$15000</span>
+                    </div>
+                    <i class="bi bi-x-lg"></i>
+                </div>
+                <div class="cart-total">
+                    <h3>Total</h3>
+                    <span class="total-pagar">100000</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu-compra">
+        <nav class="nav-menu">
+            <ul class="ul-menu">
+                <a href="compra.html" class="a-menu">Todo</a>
+                <a href="compraHombre.html" class="a-menu">Hombre</a>
+                <a href="compraMujer.html" class="a-menu">Mujer</a>
+                <a href="compraCampera.html" class="a-menu">Camperas</a>
+                <a href="compraShort.html" class="a-menu">Shorts</a>
+                <a href="compraBuzo.html" class="a-menu">Buzos</a>
+                <a href="compraRemera.html" class="a-menu">Remeras</a>
+                <a href="compraPantalon.html" class="a-menu">Pantalones</a>
+            </ul>
+        </nav>    
+    </div>
+    <div class="paginas-container">
+        <a href="compra.html" class="paginas-item item1">1</a>
+        <a href="compra2.html" class="paginas-item">2</a>
+        <a href="compra3.html" class="paginas-item">3</a>
     </div>
     <div class="inicio-compras">
         <div class="container-items">
             <div class="item">
                 <figure>
-                    <img src="https://www.moov.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dwffd7bc73/products/KA2311BGMWC4F/KA2311BGMWC4F-1.JPG" class="imagen-grid"/>
-                </figure>
+                    <a href="producto1.html">
+                        <img src="https://www.dexter.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dw50b228f5/products/PU673247-01/PU673247-01-1.JPG" class="imagen-grid"/>
+                    </a>
+                    </figure>
                 <div class="info-producto">
-                    <h2>Buzo Kappa Banda Hurtado</h2>
+                    <h2>Buzo Puma Power</h2>
                     <p class="precio">$8000</p>
                     <button>Añadir al Carrito</button>
                 </div>
             </div>
             <div class="item">
                 <figure>
-                    <img src="https://www.dexter.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dw58a04425/products/LONIFW230474/LONIFW230474-1.JPG" class="imagen-grid"/>
-                </figure>
+                    <a href="producto2.html">
+                        <img src="fotoRopa/BuzoUrbanoLotto Essenciales Cap.jpeg" class="imagen-grid"/>
+                    </a>
+                    </figure>
                 <div class="info-producto">
-                    <h2>Buzo Lotto Hs May Hombre</h2>
+                    <h2>Buzo Urbano Lotto Essenciales Cap</h2>
                     <p class="precio">$7000</p>
                     <button>Añadir al Carrito</button>
                 </div>
             </div>
             <div class="item">
                 <figure>
-                    <img src="https://www.dexter.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dwcf51154a/products/LONIFW230498/LONIFW230498-1.JPG" class="imagen-grid"/>
+                    <a href="producto3.html">
+                        <img src="fotoRopa/BuzoLottoHsMay.jpeg" class="imagen-grid"/>
+                    </a>
                 </figure>
                 <div class="info-producto">
                     <h2>Buzo Lotto Hs May Hombre</h2>
@@ -88,27 +135,33 @@
             </div>
             <div class="item">
                 <figure>
-                    <img src="https://www.dexter.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-365-dabra-catalog/default/dwb8d722de/products/PU539471-47/PU539471-47-1.JPG?sw=400&sh=400" class="imagen-grid"/>
+                    <a href="producto4.html">
+                        <img src="fotoRopa/BuzoUrbanoPumaPowerTape.jpeg" class="imagen-grid"/>
+                    </a>
                 </figure>
                 <div class="info-producto">
-                    <h2>Buzo Urbano Puma Power Tape Mujer</h2>
+                    <h2>Buzo Urbano Puma Power Tape</h2>
                     <p class="precio">$9700</p>
                     <button>Añadir al Carrito</button>
                 </div>
             </div>
             <div class="item">
                 <figure>
-                    <img src="https://www.dexter.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-365-dabra-catalog/default/dwebb8098f/products/REHB2263/REHB2263-1.JPG?sw=400&sh=400" class="imagen-grid"/>
+                    <a href="producto5.html">
+                        <img src="fotoRopa/CamperaReebookTapeMujer.jpeg" class="imagen-grid"/> 
+                    </a>
                 </figure>
                 <div class="info-producto">
-                    <h2>Buzo Reebook Tape Mujer</h2>
+                    <h2>Campera Reebook Tape Mujer</h2>
                     <p class="precio">$9900</p>
                     <button>Añadir al Carrito</button>
                 </div>
             </div>
             <div class="item">
                 <figure>
-                    <img src="https://www.dexter.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-365-dabra-catalog/default/dweaba99bc/products/TO165790/TO165790-1.JPG?sw=400&sh=400" class="imagen-grid"/>
+                    <a href="producto6.html">
+                        <img src="fotoRopa/BuzoUrbanoTopperMujer.jpeg" class="imagen-grid"/>
+                    </a>
                 </figure>
                 <div class="info-producto">
                     <h2>Buzo Urbano Topper Mujer</h2>
@@ -116,23 +169,165 @@
                     <button>Añadir al Carrito</button>
                 </div>
             </div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
+            <div class="item">
+                <figure>
+                    <a href="producto7.html">
+                        <img src="fotoRopa/CamisetaAFAAdidas.jpeg" class="imagen-grid"/>
+                    </a>    
+                </figure>
+                <div class="info-producto">
+                    <h2>Camiseta AFA Adidas</h2>
+                    <p class="precio">$7200</p>
+                    <button>Añadir al Carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="https://www.dexter.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-365-dabra-catalog/default/dw4b822f41/products/ADHL1482/ADHL1482-1.JPG?sw=400&sh=400" class="imagen-grid"/>
+                </figure>
+                <div class="info-producto">
+                    <h2>Remera Adidas Own</h2>
+                    <p class="precio">$7200</p>
+                    <button>Añadir al Carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="https://www.dexter.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-365-dabra-catalog/default/dw9f298acc/products/TSUY2219W-Y001/TSUY2219W-Y001-1.JPG?sw=400&sh=400" class="imagen-grid"/>
+                </figure>
+                <div class="info-producto">
+                    <h2>Remera 3GI Urban</h2>
+                    <p class="precio">$7200</p>
+                    <button>Añadir al Carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="https://www.dexter.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-365-dabra-catalog/default/dw9da18b28/products/PU523366-03/PU523366-03-1.JPG?sw=400&sh=400" class="imagen-grid"/>
+                </figure>
+                <div class="info-producto">
+                    <h2>Pantalon Puma Cai</h2>
+                    <p class="precio">$7200</p>
+                    <button>Añadir al Carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="https://www.dexter.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-365-dabra-catalog/default/dw7538b612/products/LONIFW230028/LONIFW230028-1.JPG?sw=400&sh=400" class="imagen-grid"/>
+                </figure>
+                <div class="info-producto">
+                    <h2>Pantalon Lotto Esscencial</h2>
+                    <p class="precio">$7200</p>
+                    <button>Añadir al Carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="https://www.dexter.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-365-dabra-catalog/default/dw464b1a18/products/AD_GT3017/AD_GT3017-1.JPG?sw=400&sh=400" class="imagen-grid"/>
+                </figure>
+                <div class="info-producto">
+                    <h2>Musculosa Adidas</h2>
+                    <p class="precio">$7200</p>
+                    <button>Añadir al Carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="https://www.dexter.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-365-dabra-catalog/default/dwb1016276/products/PU769562-04/PU769562-04-1.JPG?sw=400&sh=400" class="imagen-grid"/>
+                </figure>
+                <div class="info-producto">
+                    <h2>Remera Puma Borussia</h2>
+                    <p class="precio">$7200</p>
+                    <button>Añadir al Carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="https://www.dexter.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-365-dabra-catalog/default/dw04b37d2b/products/ADHL2120/ADHL2120-1.JPG?sw=400&sh=400" class="imagen-grid"/>
+                </figure>
+                <div class="info-producto">
+                    <h2>Pantalones Adidas Esscencial</h2>
+                    <p class="precio">$7200</p>
+                    <button>Añadir al Carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="https://www.dexter.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-365-dabra-catalog/default/dw422996be/products/PU523390-24/PU523390-24-1.JPG?sw=400&sh=400" class="imagen-grid"/>
+                </figure>
+                <div class="info-producto">
+                    <h2>Campera Puma Run</h2>
+                    <p class="precio">$7200</p>
+                    <button>Añadir al Carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="https://www.dexter.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-365-dabra-catalog/default/dw1451f663/products/PU522176-82/PU522176-82-1.JPG?sw=400&sh=400" class="imagen-grid"/>
+                </figure>
+                <div class="info-producto">
+                    <h2>Campera Puma Fit Eversculpt</h2>
+                    <p class="precio">$7200</p>
+                    <button>Añadir al Carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="https://www.dexter.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-365-dabra-catalog/default/dw7b168e18/products/ADH18487/ADH18487-1.JPG?sw=400&sh=400" class="imagen-grid"/>
+                </figure>
+                <div class="info-producto">
+                    <h2>Short Adidas Real Madrid</h2>
+                    <p class="precio">$7200</p>
+                    <button>Añadir al Carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="https://www.dexter.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-365-dabra-catalog/default/dw391f9775/products/ADHC1010/ADHC1010-1.JPG?sw=400&sh=400" class="imagen-grid"/>
+                </figure>
+                <div class="info-producto">
+                    <h2>Campera Adidas Boca Juniors</h2>
+                    <p class="precio">$7200</p>
+                    <button>Añadir al Carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="https://www.dexter.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-365-dabra-catalog/default/dwaed75990/products/AD_GL0791/AD_GL0791-1.jpg?sw=400&sh=400" class="imagen-grid"/>
+                </figure>
+                <div class="info-producto">
+                    <h2>Campera Adidas Esscencial Full-zip</h2>
+                    <p class="precio">$7200</p>
+                    <button>Añadir al Carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="https://www.dexter.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-365-dabra-catalog/default/dw9d057261/products/ADHF3928/ADHF3928-1.JPG?sw=400&sh=400" class="imagen-grid"/>
+                </figure>
+                <div class="info-producto">
+                    <h2>Remera Adidas Argentina</h2>
+                    <p class="precio">$8000</p>
+                    <button>Añadir al Carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="https://www.dexter.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-365-dabra-catalog/default/dw0112c58b/products/NI_CZ2217-058/NI_CZ2217-058-1.JPG?sw=400&sh=400" class="imagen-grid"/>
+                </figure>
+                <div class="info-producto">
+                    <h2>Campera Nike Dri-Fit</h2>
+                    <p class="precio">$7200</p>
+                    <button>Añadir al Carrito</button>
+                </div>
+            </div>
         </div>    
     </div>
-    
+    <div class="paginas-container">
+        <a href="compra.html" class="paginas-item item1">1</a>
+        <a href="compra2.html" class="paginas-item">2</a>
+        <a href="compra3.html" class="paginas-item">3</a>
+    </div>
 
 
 
