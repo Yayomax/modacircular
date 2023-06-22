@@ -1,0 +1,1580 @@
+body{
+    box-sizing: border-box;
+    margin:0 0 0 55px;
+    background-color: var(--color-tema);       /* Body*/
+    font-family: calibri;
+    padding-left:0;
+    height: 150vh;
+    color:#fff;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow:auto;
+}
+
+:root{   /*Seccion de variables*/
+    --color-tema:#1a1e23;        /* variable Color gris / tema*/
+    --color-rosa:#ff0077;           /* variableColor rosa*/     
+}
+
+/*Para colocar estos colores se colocara: var(--color-rosa);       */
+
+/*-----------------------Barra Lateral-------------------------------------------------------------------------------------------------*/
+
+nav.menu-lateral{
+    width: 50px;
+    height: 100%;
+    background-color:#1a1e23 ;    
+    padding: 40px 0 40px 4px;
+    position: fixed;
+    top:0;
+    left:0;
+    overflow:hidden;
+    transition: .5s;
+    z-index: 1;
+}
+
+nav.menu-lateral.expandir{
+    width: 300px;
+}
+
+.btn-expandir{
+    width: 100%;
+    padding-left: 10px;
+}
+
+.btn-expandir > i{
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+    padding: 50px 0 50px 52px;
+}
+
+ul li.item-menu{
+    transition: .2s;
+}
+
+ul li.activo{
+    background-color: var(--color-rosa);
+}
+
+ul li.item-menu:hover{
+    background-color:var(--color-rosa);
+}
+
+ul li.item-menu a{
+    color:#fff;
+    text-decoration:none;
+    font-size: 16px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom:20px;
+    line-height: 40px;
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 70px;
+    transition: 1s;
+}
+
+ul li.item-menu a .icon > i{
+    font-size: 20px;
+}
+
+/*-------------------------HEADER-----------------------------------------------------------------------------------------------------*/
+.logo{
+    width: 100px;
+}
+
+.header-container {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color:var(--color-tema);
+    color:#fff;
+}
+
+.title-container{
+    display: flex;
+    background-image:url(imagenmoda2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:0% 20%;
+    height: 26vh;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 10px var(--color-rosa);
+}
+.title-one{
+    margin:0;
+    padding:30px;
+    font-size: 60px;
+    font-family: arial black;
+    font-weight: 900;
+    color:#e2d2d2;
+    text-shadow: 2px 2px 9px #690836;
+    background-color:#ffffff10;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border-radius: 20px;
+    position: relative;
+    z-index: 0;
+    transition: all;
+    transition-duration:2s ;
+}
+
+.title-one:hover{
+    transform: scale(1.1);
+}
+
+/*--------------------INICIO---------------------------------------------------------------------------*/
+
+.grid-container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px,300px));
+    grid-template-rows: 410px;
+    grid-gap:100px;
+    margin: 45px 0 60px 0;
+}
+
+.grid-item{
+    border: none;
+    object-fit: cover;
+    transition-duration:0.5s ;
+    cursor: pointer;
+}
+
+.grid-item:hover{
+    transform: scale(1.03);
+}
+
+.title-vender{
+    margin: 0;
+    text-align: center;
+    text-shadow: 3px 3px 10px var(--color-rosa);
+    color:#fff;
+    font-size: 40px;
+}
+
+.title-comprar{
+    margin: 0;
+    text-align: center;
+    text-shadow: 3px 3px 10px var(--color-rosa);
+    color:#fff;
+    font-size: 40px;
+}
+
+.title-nosotros{
+    margin: 0;
+    text-align: center;
+    text-shadow: 3px 3px 10px var(--color-rosa);
+    color:#fff;
+    font-size: 40px;
+}
+
+.image-one{
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #fff;
+}
+
+.image-two{
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #fff;
+}
+
+.image-three{
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #fff;
+}
+.quienesSomos{
+    margin: 120px 40px 50px 40px;
+}
+.textoQuienesSomos{
+    text-align: center;
+    font-size: 18px;
+}
+
+b{
+    text-shadow: 1px 1px 7px var(--color-rosa);
+}
+
+/*-------------------Preguntas Frecuentes--------------------------------------------------------------------------------------------------*/
+
+.tituloPreguntasFrecuentes{
+    text-align: center;
+    text-shadow:1px 1px 7px var(--color-rosa)
+}
+
+.indice{
+    margin-top: 30px;
+}
+
+.ul-indice{
+    display:inline-flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color:#3b3543;
+}
+
+.li-indice{
+    padding: 5px 0 5px;
+}
+
+.li-indice a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 0 5px;
+}
+
+.li-indice a:hover{
+    color:var(--color-rosa);
+    text-shadow: 1px 2px 2px var(--color-tema );
+}
+
+.preguntas-container{
+    font-size: 18px;
+    padding: 20px;
+    display: grid;
+    grid-template-areas:
+    "tituloPreguntaMediosDePago tituloPreguntaMediosDePago "
+    "mediosDePago imagenesMediosDePago"
+    "tituloEntregaProductos tituloEntregaProductos"
+    "imagenEntregaProductos entregaDeProductos"
+    "tituloEnvios tituloEnvios"
+    "envios imgEnvios"
+    "tituloPromociones tituloPromociones"
+    "imgPromociones promociones"
+    "tituloAtencionAlCliente tituloAtencionAlCliente"
+    "atencionAlCliente imagenAtencionAlCliente"
+    "tituloCuidadoDePrendas tituloCuidadoDePrendas"
+    "imagenCuidadoDePrendas cuidadoDePrendas"
+    "tituloProductoDefectuoso tituloProductoDefectuoso"
+    "productoDefectuoso imagenProductoDefectuoso"
+    "tituloReembolso tituloReembolso"
+    "imagenReembolso reembolso"; 
+    grid-template-columns: 1fr 1fr;
+    margin:0 66px 0 20px
+}
+
+#titulo-pregunta-medios-de-pago{
+    grid-area: tituloPreguntaMediosDePago;
+    font-size: 20px;
+    text-shadow: 1px 1px 7px var(--color-rosa);
+}
+
+#titulo-pregunta-medios-de-pago h2{
+    display: inline-block;
+    width: 50%;
+    height: 40px;
+    border-bottom: solid var(--color-rosa);
+}
+
+#medios-de-pago{
+    grid-area: mediosDePago;
+    text-align: justify;
+    margin:10px
+}
+
+.imagenes-medios-de-pago{
+    grid-area: imagenesMediosDePago;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.imagen-medios-de-pago-hover:hover{
+    transform: scale(1.1);
+}
+
+#imagen-tarjeta{
+    padding:  5px;
+    width: 110px;
+    transition-duration: 1s;
+}
+
+#imagen-tarjeta-americanExpress{
+    width: 75px;
+    padding: 5px;
+    transition-duration: 1s;
+}
+
+#imagen-tarjeta-naranja{
+    width: 80px;
+    padding: 5px;
+    transition-duration: 1s;
+}
+
+#imagen-tarjeta-bna{
+    width: 150px;
+    padding: 5px;
+    transition-duration: 1s;
+}
+
+#titulo-entrega-productos{
+    grid-area: tituloEntregaProductos;
+    text-align: end;
+    font-size: 20px;
+    text-shadow: 1px 1px 7px var(--color-rosa);
+}
+
+#titulo-entrega-productos h2{
+    display: inline-block;
+    width: 50%;
+    border-bottom: solid var(--color-rosa);
+}
+
+.entrega-productos{
+    grid-area: entregaDeProductos;
+    text-align:justify;
+    margin:10px;
+}
+
+.container-imagen-entregaProductos{
+    grid-area: imagenEntregaProductos;
+    margin-bottom: 100px;
+}
+
+.imagen-entregaProductos{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#titulo-envios{
+    grid-area: tituloEnvios;
+    font-size: 20px;
+    text-shadow: 1px 1px 7px var(--color-rosa);
+}
+
+#titulo-envios h2{
+    display: inline-block;
+    width: 50%;
+    height: 40px;
+    border-bottom: solid var(--color-rosa);
+}
+
+.envios{
+    grid-area:envios;
+    margin:10px
+}
+
+.container-imagen-envios{
+    grid-area: imgEnvios;
+    margin-bottom: 100px;
+}
+
+.imagen-envios{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#titulo-promociones{
+    grid-area: tituloPromociones;
+    font-size: 20px;
+    text-shadow: 1px 1px 7px var(--color-rosa);
+    text-align: end;
+}
+
+#titulo-promociones h2{
+    display: inline-block;
+    width: 50%;
+    height: 40px;
+    border-bottom: solid var(--color-rosa);
+}
+
+.promociones{
+    grid-area: promociones;
+}
+
+.container-imagen-promociones{
+    grid-area: imgPromociones;
+    margin-bottom:100px
+}
+
+.imagen-promociones{
+    width: 95%;
+    border-radius: 20px;
+}
+
+#titulo-atencion-al-cliente{
+    grid-area: tituloAtencionAlCliente;
+    font-size: 20px;
+    text-shadow: 1px 1px 7px var(--color-rosa);
+}
+
+#titulo-atencion-al-cliente h2{
+    display: inline-block;
+    width: 50%;
+    height: 40px;
+    border-bottom: solid var(--color-rosa);
+}
+
+.atencion-al-cliente{
+    grid-area: atencionAlCliente;
+}
+
+.atencion-al-cliente p{
+    margin:0
+}
+
+.section-atencion-al-cliente h2{
+    display: inline-block;
+    text-shadow: 1px 1px 7px var(--color-rosa);
+    border-bottom: solid var(--color-rosa);
+}
+
+.container-imagen-atencion-al-cliente{
+    grid-area: imagenAtencionAlCliente;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.imagen-atencion-al-cliente{
+    width: 65%;
+    border-radius: 20px;
+}
+
+#titulo-cuidado-de-prendas{
+    grid-area: tituloCuidadoDePrendas;
+    font-size: 20px;
+    text-shadow: 1px 1px 7px var(--color-rosa);
+    text-align: end;
+}
+
+#titulo-cuidado-de-prendas h2{
+    display: inline-block;
+    width: 50%;
+    height: 40px;
+    border-bottom: solid var(--color-rosa);
+}
+
+.cuidado-de-prendas{
+    grid-area: cuidadoDePrendas;
+    text-align: justify;
+    margin-right:10px
+}
+
+.container-imagenes-cuidado-de-prendas{
+    grid-area: imagenCuidadoDePrendas;
+    margin-bottom: 100px;
+}
+
+.imagen-cuidado-de-prendas{
+    width: 90%;
+    border-radius: 20px;
+}
+
+#titulo-producto-defectuoso{
+    grid-area: tituloProductoDefectuoso;
+    font-size: 20px;
+    text-shadow: 1px 1px 7px var(--color-rosa);
+}
+
+#titulo-producto-defectuoso h2 {
+    display: inline-block;
+    width: 50%;
+    height: 40px;
+    border-bottom: solid var(--color-rosa)
+}
+
+.producto-defectuoso{
+    grid-area: productoDefectuoso;
+    text-align: justify;
+    margin:10px
+}
+
+.container-imagen-producto-defectuoso{
+    grid-area: imagenProductoDefectuoso;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.imagen-producto-defectuoso{
+    width: 40%;
+    border-radius: 20px;
+}
+
+#titulo-reembolso{
+    grid-area: tituloReembolso;
+    font-size: 20px;
+    text-shadow: 1px 1px 7px var(--color-rosa);
+    text-align:end;
+}
+
+#titulo-reembolso h2{
+    display: inline-block;
+    width: 50%;
+    height: 40px;
+    border-bottom: solid var(--color-rosa)
+}
+
+.reembolso{
+    grid-area: reembolso;
+}
+
+.container-imagen-reembolso{
+    grid-area: imagenReembolso;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.imagen-reembolso{
+    width: 80%;
+    border-radius: 20px;
+}
+
+/* -------------Compras------------------------------------------------------------------------------------------- */
+
+.icon-cart{
+    width: 40px;
+    height: 40px;
+    stroke: #fff;
+}
+
+.icon-cart:hover{
+    cursor: pointer;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* -------------Header Compras------------------------------------------------------------------------------------------ */
+.header-tienda{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 0px 0;
+    font-size: 20px;
+}
+
+.header-tienda h1{
+    text-shadow: 0 0 10px var(--color-rosa);
+    margin:20px 90px 0 0;
+}
+
+.navegacion{
+    height: 70px;
+    width: 100%;
+}
+
+.menu-opciones{
+    display: flex;
+    justify-content: space-around ;
+}
+
+.opciones{
+    margin: 0;
+}
+
+
+
+
+/*---------------------Carrito de Compras----------------------------------------------------------------------------------------*/
+.container-icon{
+    position: relative;
+}
+
+.count-products{
+    position: absolute;
+    top: 15%;
+    right: 100%;
+
+    background-color: #000;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+#contador-productos{
+    font-size: 12px;
+}
+
+.container-cart-products{
+    position: absolute;
+    top: 50px;
+    right: 0;
+
+    background-color: var(--color-tema);
+    width: 300px;
+    z-index: 1;
+    box-shadow: 0 0 20px var(--color-rosa);
+    border-radius: 10px;
+}
+
+.cart-product{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+
+}
+
+.info-cart-product{
+    display: flex;
+    justify-content: space-between;
+    flex: 0.8;
+}
+
+.titulo-producto-carrito{
+    font-size: 15px;
+    margin: 0;
+}
+
+.precio-producto-carrito{
+    font-weight: 700;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.cantidad-producto-carrito{
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.icon-close{
+    width: 25px;
+    height: 25px;
+    transition-duration:0.5s ;
+}
+
+.icon-close:hover{
+    stroke: red;
+    cursor: pointer;
+}
+
+.cart-total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    gap: 20px;
+}
+
+.cart-total h3{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.cart-total h2{
+    font-size: 18px;
+    background-color: var(--color-rosa);
+    padding: 5px;
+    border-radius: 10px;
+    transition-duration:0.2s;
+}
+
+.cart-total h2:hover{
+box-shadow: 0 0 10px var(--color-rosa);
+cursor: pointer;
+}
+
+.cart-total h2:active{
+    transform: scale(1.1);
+}
+
+.total-pagar{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.hidden-cart{
+    display: none;
+}
+
+
+.ul-menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border-top: solid var(--color-rosa) ;
+    border-bottom: solid var(--color-rosa);
+}
+
+.a-menu{
+    text-decoration: none;
+    color:#fff;
+    font-size: 20px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.a-menu:hover{
+    transform: scale(1.1);
+    text-shadow:0 0 5px var(--color-rosa);
+}
+
+.menu-active{
+    border-bottom: solid var(--color-rosa);
+}
+
+
+
+/* ---------Body Compras----------------------------------------------------------------------- */
+.container-items{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 20px;
+}
+
+.item{
+    border-radius: 10px;
+    border: solid #3b3543;
+}
+
+.item:hover{
+    box-shadow: 0 0 10px var(--color-rosa);
+}
+
+.item img{
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
+    border-radius: 10px;
+    transition: all 1s;
+}
+
+.item figure{
+    overflow: hidden;
+    margin:0;
+    border-radius:10px ;
+}
+
+.item:hover img{
+    transform: scale(1.06);
+}   
+
+.info-product{
+    padding: 0 10px 0 10px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-product h2{
+    margin: 0;
+    height: 100px;
+}
+
+.price{
+    font-size: 20px;
+    font-weight: 900;
+    margin: 5px;
+}
+
+.info-product button{
+    border: none;
+    background: none;
+    background-color: var(--color-rosa);
+    color: #fff;
+    padding: 15px 10px;
+    margin: 0 0 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition-duration: 0.01s;
+}
+
+.info-product button:active{
+    transform: scale(1.03);
+    box-shadow: 0 0 20px var(--color-rosa);
+}
+
+.cart-empty{
+    padding: 8px;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+.hidden{
+    display: none;
+}
+
+/* ------------------------------Ventas------------------------------- */
+
+.tituloVentas{
+    text-align: center;
+    font-size: 26px;
+    text-shadow: 1px 1px 7px var(--color-rosa);
+}
+
+.tituloVentas h1{
+    margin:0
+}
+
+.titulosVentas{
+    display: flex;
+    justify-content: space-between;
+    font-size:23px;
+    margin: 20px 20px 0 20px
+}
+
+.a-formulario{
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #fff;
+    height: 50px;
+    transition-duration:1s ;
+}
+
+.a-formulario:hover{
+    transform: scale(1.07);
+    box-shadow: 0 0 10px #fff;
+}
+
+.a-formulario a{
+    text-decoration: none;
+    margin: 0 20px 0 20px;
+    color:#000
+}
+
+.titulosVentas h2{
+    margin:0
+}
+
+.titulosVentas2{
+    font-size: 20px;
+    margin: 0 0 20px 20px
+}
+
+.titulosVentas2 h2{
+    margin:0
+}
+
+.container-imagenVentas{
+    width:600px;
+    margin:auto
+}
+
+.imagenVentas{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 15px #fff;
+    transition-duration:1s
+}
+
+.imagenVentas:hover{
+    transform: scale(1.1);
+}
+
+.container-criteriosDeSeleccion{
+    margin: 20px 100px 100px 66px;
+    padding: 30px;
+    display:grid;
+    grid-template-areas: 
+    "tituloCriteriosDeSeleccion tituloCriteriosDeSeleccion"
+    "tituloTemporada tituloTemporada"
+    "temporada imagenTemporada"
+    "tituloEstado tituloEstado"
+    "imagenEstado estado"
+    "tituloMarca tituloMarca"
+    "marca imagenMarca"
+    "tituloEstilo tituloEstilo"
+    "imagenEstilo estilo"
+    "tituloCalidad tituloCalidad"
+    "calidad imagenCalidad";
+    grid-template-columns: 1fr 1fr;
+}
+
+.titulo-criteriosDeSeleccion{
+    grid-area: tituloCriteriosDeSeleccion;
+    text-align: center;
+    font-size: 20px;
+}
+
+.titulo-criteriosDeSeleccion h2{
+    text-shadow: 1px 1px 6px var(--color-rosa);
+}
+
+.titulo-temporada{
+    grid-area: tituloTemporada;
+    text-shadow: 1px 1px 7px var(--color-rosa);
+    font-size: 20px;
+}
+
+.titulo-temporada h2 {
+    display: inline-block;
+    width: 50%;
+    border-bottom: solid var(--color-rosa);
+}
+
+.temporada{
+    grid-area: temporada;
+    font-size: 18px;
+}
+
+.container-imagen-temporada{
+    grid-area:imagenTemporada;
+    text-align: center;
+    
+}
+
+
+.imagen-temporada{
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #fff;
+}
+
+.titulo-estado{
+    grid-area: tituloEstado;
+    text-align: end;
+    text-shadow: 1px 1px var(--color-rosa);
+    font-size: 20px;
+}
+
+.titulo-estado h2{
+    display: inline-block;
+    width: 50%;
+    border-bottom: solid var(--color-rosa);
+}
+
+.estado{
+    grid-area:estado;
+    font-size: 18px;
+}
+
+.container-imagen-estado{
+    grid-area: imagenEstado;
+    text-align: center;
+    padding: 20px;
+}
+
+.imagen-estado{
+    width: 70%;
+    height: 90%;
+    filter:drop-shadow(0 0 4px #fff);
+    padding: 20px;
+}
+
+.titulo-marca{
+    grid-area:tituloMarca;
+    text-shadow: 1px 1px 7px var(--color-rosa);
+    font-size: 20px;
+}
+
+.titulo-marca h2{
+    display: inline-block;
+    width: 50%;
+    border-bottom: solid var(--color-rosa);
+}
+
+.marca{
+    grid-area: marca;
+    font-size: 17px;
+    text-align: justify;
+}
+
+.container-imagen-marca{
+    grid-area: imagenMarca;
+    text-align: center;
+    padding: 20px;
+}
+
+.imagen-marca{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #fff;
+}
+
+.titulo-estilo{
+    grid-area: tituloEstilo;
+    text-shadow: 1px 1px 7px var(--color-rosa);
+    font-size: 20px;
+    text-align: end;
+}
+
+.titulo-estilo h2{
+    display: inline-block;
+    width: 50%;
+    border-bottom: solid var(--color-rosa);
+}
+
+.estilo{
+    grid-area:estilo;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.container-imagen-estilo{
+    grid-area: imagenEstilo;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.imagen-estilo{
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #fff;
+}
+
+.titulo-calidad{
+    grid-area: tituloCalidad;
+    text-shadow: 1px 1px 7px var(--color-rosa);
+    font-size: 20px;
+}
+
+.titulo-calidad h2{
+    display: inline-block;
+    width: 50%;
+    border-bottom: solid var(--color-rosa);
+}
+
+.calidad{
+    grid-area:calidad;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.container-imagen-calidad{
+    grid-area: imagenCalidad;
+    text-align: center;
+    padding: 20px;
+}
+
+.imagen-calidad{
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #fff;
+}
+
+.container-no-aceptamos{
+    margin: 20px 100px 100px 66px;
+    display: grid;
+    grid-template-areas:
+    "tituloNoAceptamos tituloNoAceptamos "
+    "noAceptamos imagenNoAceptamos ";
+    grid-template-columns: 1fr 2fr ;
+    border-radius: 10px;
+}
+
+.titulo-no-aceptamos{
+    grid-area: tituloNoAceptamos;
+    text-align:center;
+    font-size: 22px;
+    text-shadow: 1px 1px 7px var(--color-rosa);
+}
+
+.no-aceptamos{
+    grid-area: noAceptamos;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.no-aceptamos ul{
+    padding: 0;
+    margin:0
+}
+
+.no-aceptamos li{
+    margin:5px
+}
+
+.x{
+    color:red
+}
+
+.container-imagen-no-aceptamos{
+    grid-area: imagenNoAceptamos;
+    text-align: center;
+}
+
+.imagen-no-aceptamos{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #fff;
+}
+
+.container-donaciones{
+    margin: 20px 120px 100px 86px;
+    display: grid;
+    grid-template-areas: 
+    "tituloDonaciones tituloDonaciones"
+    "imagenDonaciones donaciones";
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.titulo-donaciones{
+    grid-area: tituloDonaciones;
+    text-align:center;
+    font-size: 22px;
+    text-shadow: 1px 1px 7px var(--color-rosa);
+}
+
+.donaciones{
+    grid-area: donaciones;
+    text-align: justify;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.container-imagen-donaciones{
+    grid-area: imagenDonaciones;
+    text-align: center;
+}
+
+.imagen-donaciones{
+    width: 80%;
+    box-shadow: 0 0 10px #fff;
+    border-radius: 10px;
+}
+
+.container-cobrar{
+    margin: 20px 120px 100px 86px;
+    display: grid;
+    grid-template-areas:
+    "tituloCobrar tituloCobrar"
+    "cobrar imagenCobrar"
+    "tituloConsignacion tituloCredito"
+    "consignacion credito"
+    "tituloCompromiso tituloCompromiso"
+    "compromiso compromiso";
+    grid-template-columns: 1fr 1fr;
+}
+
+.titulo-cobrar{
+    grid-area: tituloCobrar;
+    font-size: 26px;
+    text-shadow: 1px 1px 7px var(--color-rosa);
+    text-align: center;
+}
+
+.cobrar{
+    grid-area: cobrar;
+    font-size: 18px;
+}
+
+.container-imagen-cobrar{
+    grid-area: imagenCobrar;
+    text-align: center;
+}
+
+.imagen-cobrar{
+    width: 90%;
+    box-shadow: 0 0 10px #fff;
+    border-radius: 20px;
+}
+
+.titulo-consignacion{
+    grid-area: tituloConsignacion;
+    text-shadow: 1px 1px 7px var(--color-rosa);
+}
+
+.consignacion{
+    padding: 10px;
+    grid-area: consignacion;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.titulo-credito{
+    grid-area: tituloCredito;
+    text-shadow: 1px 1px 7px var(--color-rosa);
+}
+
+.credito{
+    grid-area: credito;
+    text-align: justify;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.titulo-compromiso{
+    grid-area: tituloCompromiso;
+    text-shadow: 1px 1px 7px var(--color-rosa);
+}
+
+.compromiso{
+    grid-area: compromiso;
+    text-align: justify;
+    font-size: 18px;
+}
+
+
+/*------------------------------Formularios-----------------------------------------------------*/
+
+.titulo-formulario{
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 2px 2px 7px var(--color-rosa);
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.div-formulario{
+    margin: 20px;
+}
+
+.inputForm{
+    height: 32px;
+    width: 380px;
+    margin:0;
+    padding:0 ;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+
+.inputForm:focus{
+    background-color:#e7d6de;
+}
+
+.labelForm{
+    font-size:30px;
+    direction:ltr;
+    margin-right:20px;
+}
+
+.correo{
+    margin-right: 36px;
+}
+
+.telefono{
+    margin-right:15px ;
+}
+
+.dia{
+    margin-right: 47px;
+}
+
+.hora{
+    margin-right: 25px;
+}
+
+.comentarios{
+    width: 100%;
+    height: 80px;
+    resize: none;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+
+.comentarios:focus{
+    background-color:#e7d6de;
+}
+
+.imgForm{
+    width: 430px;
+    margin-left: 80px;
+}
+
+.botonFormulario{
+    width: 74%;
+    height: 36px;
+    margin:20px 0 0 130px;
+    background-color: var(--color-rosa);
+    color:#fff;
+    cursor:pointer;
+    border:none;
+    border-radius: 20px;
+    transition-duration: 0.2s;
+}
+
+.botonFormulario:hover{
+    box-shadow: 0 0 20px var(--color-rosa);
+}
+
+.botonFormulario:active{
+    transform: scale(1.06);
+}
+
+
+
+/*-------------Sobre Nosotros---------------------------------------------------------------------*/
+
+.sobreNosotros{
+    font-size: 40px;
+    text-align: center;
+    margin:0;
+    text-shadow: 1px 1px 7px var(--color-rosa)
+}
+
+.nosotros-container{
+    margin:10px 130px 50px 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container1{
+    grid-template-areas: 
+    "imgMision mision";
+}
+
+.nosotrosTitulo{
+    margin: 0;
+    border-bottom: solid var(--color-rosa);
+}
+
+.mision{
+    grid-area: mision;
+    padding: 0 20px 0 20px;
+    margin: 50px 0 50px 0;
+    text-align: justify;
+    font-size: 18px;
+}
+
+img.imgMision{
+    width:100%;
+    margin: 50px 0 50px 0;
+    border-radius: 30px;
+    grid-area: imgMision;
+}
+
+.container2{
+    display: grid;
+    grid-template-areas:
+    "vision imgVision";
+}
+
+.vision{
+    grid-area: vision;
+    padding: 0 20px 0 20px;
+    margin-bottom: 50px;
+    text-align: justify;
+    font-size: 18px;
+}
+
+img.imgVision{
+    width: 100%;
+    margin-bottom: 50px;
+    border-radius: 30px;
+    grid-area: imgVision;
+}
+
+.container3{
+    display: grid;
+    grid-template-areas: 
+    "imgElegirnos elegirnos";
+    grid-template-columns: 1fr 2fr;
+    margin:0 130px 50px 80px;
+}
+
+.elegirnos{
+    grid-area:elegirnos;
+    padding: 0;
+    text-align: justify;
+    font-size: 18px;
+}
+
+img.imgElegirnos{
+    grid-area: imgElegirnos;
+    width: 100%;
+    margin:0
+}
+
+/*-------------Footer---------------------------------------------------------------*/
+.footer{
+    margin:0;
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "integrantes enlaceSitioGrupo trabajoGrupal"
+    "derechosReservados  derechosReservados derechosReservados";
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color:#262c32;
+    border-radius: 10px;
+}
+
+.integrantes{
+    grid-area: integrantes;
+    padding: 30px 30px 0 30px;
+    text-align:center;
+    font-size:18px
+}
+
+.enlaceSitioGrupo{
+    grid-area: enlaceSitioGrupo;
+    text-align: center;
+    margin:auto;
+    font-size: 20px;
+    border:solid #fff;
+    border-radius: 10px;
+    background-color: #fff;
+    transition-duration: 1s;
+}
+
+.enlaceSitioGrupo a{
+    padding: 20px;
+    color:#000;
+    text-decoration: none;
+}
+
+.enlaceSitioGrupo:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #fff;
+}
+
+.trabajoGrupal{
+    grid-area: trabajoGrupal;
+    padding: 30px 30px 0 30px;
+    text-align: end;
+}
+
+.trabajoGrupal h2,h3{
+    margin:0;
+}
+
+.imagen-uade{
+    padding-top: 20px;
+    width: 90%;
+    border-radius: 20px;
+}
+
+.derechos{
+    grid-area: derechosReservados;
+    text-align: center;
+}
+
+/*------------InicioResponsive-------------------------------------*/
+@media only screen and (max-width:590px){
+
+    body{
+        margin:30px 0 0 0
+    }
+
+    .logo{
+    width: 80px;
+    }
+
+    .header-container{
+        height: 17vh;
+    }
+
+    .title-container{
+        height: 20vh;
+    }
+
+    .title-one{
+        font-size: 35px;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .grid-container{
+        grid-template-columns: repeat(auto-fill, minmax(120px,120px));
+        grid-template-rows: 190px;
+        grid-gap:10px;
+    }
+
+
+    .title-vender{
+        font-size: 20px;
+    }
+
+    .title-comprar{
+        font-size: 20px;
+    }
+
+    .title-nosotros{
+        font-size:20px
+    }
+
+    .image-one{
+        border-radius: 20px;
+        margin-top: 20px;
+        box-shadow: 0 0 5px #fff;
+    }
+
+    .image-two{
+        border-radius: 20px;
+        margin-top: 20px;
+        box-shadow: 0 0 5px #fff;
+    }
+
+    .image-three{
+        border-radius: 20px;
+        margin-top: 20px;
+        box-shadow: 0 0 5px #fff;
+    }
+
+    .textoQuienesSomos{
+        font-size: 15px;
+    }
+
+    nav.menu-lateral{
+        width: 100%;
+        height: 10px;
+        padding: 20px 0 20px 4px;
+    }
+
+    nav.menu-lateral.expandir{
+        height: 450px;
+    }
+
+    /*-------Sobre Nosotros Responsive-------------------------*/
+
+    .sobreNosotros{
+        font-size: 30px;
+    }
+
+    .nosotros-container{
+        margin:0;
+        grid-template-columns:1fr
+    }
+
+    .container1{
+        grid-template-areas:
+        "mision mision"
+        "imgMision imgMision";
+    }
+
+    .nosotros.mision{
+        margin: 30px 0 0 0
+    }
+
+    img.imgMision{
+        margin: 0 10px 50px 10px;
+    }
+
+    .container2{
+        grid-template-areas: 
+        "vision vision"
+        "imgVision imgVision";
+    }
+
+    .nosotros.vision{
+        margin-bottom: 0;
+    }
+
+    img.imgVision{
+        width: 90%;
+        margin:  20px 16px 50px 30px
+    }
+
+    .container3{
+        grid-template-areas:
+        "elegirnos elegirnos"
+        "imgElegirnos imgElegirnos";
+    }
+
+}
+
