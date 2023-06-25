@@ -685,8 +685,8 @@ img{
 }
 
 .cart-total h2:hover{
-box-shadow: 0 0 10px var(--color-rosa);
-cursor: pointer;
+    box-shadow: 0 0 10px var(--color-rosa);
+    cursor: pointer;
 }
 
 .cart-total h2:active{
@@ -818,6 +818,10 @@ cursor: pointer;
     text-align: center;
     font-size: 26px;
     text-shadow: 1px 1px 7px var(--color-rosa);
+}
+
+.container-titulosVentasResponsive{
+    display: none;
 }
 
 .tituloVentas h1{
@@ -1095,7 +1099,7 @@ cursor: pointer;
 }
 
 .x{
-    color:red
+    color:rgb(251, 0, 0)
 }
 
 .container-imagen-no-aceptamos{
@@ -1454,8 +1458,98 @@ img.imgElegirnos{
     text-align: center;
 }
 
+
+/*Responsive Laptop*/
+
+@media only screen and (max-width:1024px){
+    .grid-container{
+        grid-template-columns: repeat(auto-fit, minmax(200px,200px));
+        grid-template-rows: 310px;
+        grid-gap:100px;
+    }
+
+    .temporada{
+        font-size: 15px;
+    }
+
+    .estado{
+        font-size: 15px;
+    }
+
+    .marca{
+        font-size: 15px;
+    }
+
+    .estilo{
+        font-size: 15px;
+    }
+
+    .calidad{
+        font-size: 15px;
+    }
+
+    .no-aceptamos{
+        width: 14px;
+    }
+
+    .donaciones{
+        font-size:14px ;
+    }
+
+    .cobrar{
+        font-size: 14px;
+    }
+
+    .consignacion{
+        font-size: 14px;
+    }
+
+    .credito{
+        font-size: 14px;
+    }
+
+    .compromiso{
+        font-size: 14px;
+    }
+
+    .container-no-aceptamos{
+        margin:20px;
+        grid-template-areas: 
+        "tituloNoAceptamos tituloNoAceptamos"
+        "noAceptamos noAceptamos"
+        "imagenNoAceptamos imagenNoAceptamos";
+        grid-template-columns: 1fr ;
+    }
+
+    .no-aceptamos{
+        width: 100%;
+    }
+
+    .container-imagen-no-aceptamos img{
+        width: 60%;
+        text-align: center;
+    }
+
+    .nosotros.mision{
+        font-size: 14px;
+    }
+
+    .nosotros.vision{
+        font-size: 14px;
+    }
+
+    .nosotros.elegirnos{
+        font-size: 14px;
+    }
+
+    .a-formulario{
+        font-size: 15px;
+    }
+}
+
+/*Resposive Celular*/
 /*------------InicioResponsive-------------------------------------*/
-@media only screen and (max-width:590px){
+@media only screen and (max-width:790px){
 
     body{
         margin:30px 0 0 0
@@ -1463,6 +1557,10 @@ img.imgElegirnos{
 
     .logo{
     width: 80px;
+    }
+
+    ul li.item-menu a{
+        font-size: 12px;
     }
 
     .header-container{
@@ -1548,7 +1646,8 @@ img.imgElegirnos{
     }
 
     .nosotros.mision{
-        margin: 30px 0 0 0
+        margin: 30px 0 0 0;
+        font-size: 14px;
     }
 
     img.imgMision{
@@ -1563,6 +1662,7 @@ img.imgElegirnos{
 
     .nosotros.vision{
         margin-bottom: 0;
+        font-size: 14px;
     }
 
     img.imgVision{
@@ -1574,7 +1674,386 @@ img.imgElegirnos{
         grid-template-areas:
         "elegirnos elegirnos"
         "imgElegirnos imgElegirnos";
+        grid-template-columns: 1fr;
+        margin:30px 30px 0px 30px;
+    }
+
+    .elegirnos{
+        font-size: 14px;
+        text-align: start;
+    }
+
+    img.imgElegirnos{
+        width: 10px;
+    }
+
+    /*---------------Ventas Responsive------------------------------------------------------------------------*/
+    
+    .tituloVentas{
+        font-size: 18px;
+    }
+
+    .container-titulosVentas{
+        display: none;
+    }
+
+    .container-titulosVentasResponsive{
+        display: block;
+    }
+
+    .titulosVentas{
+        font-size: 13px;
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+    
+    .titulosVentas2{
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .a-formulario{
+        margin:25px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 15px;
+    }
+
+    .container-imagenVentas{
+        width: 300px;
+    }
+
+    .container-criteriosDeSeleccion{
+        margin:20px;
+        padding: 0;
+        grid-template-areas:
+        "tituloCriteriosDeSeleccion tituloCriteriosDeSeleccion"
+        "tituloTemporada tituloTemporada"
+        "temporada temporada"
+        "imagenTemporada imagenTemporada"
+        "tituloEstado tituloEstado"
+        "estado estado"
+        "imagenEstado imagenEstado"
+        "tituloMarca tituloMarca"
+        "marca marca"
+        "imagenMarca imagenMarca"
+        "tituloEstilo tituloEstilo"
+        "estilo estilo"
+        "imagenEstilo imagenEstilo"
+        "tituloCalidad tituloCalidad"
+        "calida calidad"
+        "imagenCalidad imagenCalidad";
+        grid-template-columns: 1fr;
+    }
+
+    .titulo-criteriosDeSeleccion{
+        font-size: 14px;
+    }
+
+    .titulo-criteriosDeSeleccion h3{
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .titulo-temporada h2{
+        width: 100%;
+        margin-top:90px
+    }
+
+    .temporada{
+        font-size: 14px;
+    }
+
+    .container-imagen-temporada{
+        margin-bottom: 30px;
+    }
+
+    .titulo-estado h2{
+        width: 100%;
+        margin-top:90px;
+        text-align:start
+    }
+
+    .estado{
+        font-size: 14px;
+    }
+
+    .container-imagen-estado{
+        margin-bottom: 30px;
+    }
+
+    .titulo-marca h2{
+        width: 100%;
+        margin-top:90px
+    }
+
+    .marca{
+        font-size: 14px;
+    }
+
+    .container-imagen-marca{
+        margin-bottom: 30px;
+    }
+
+    .titulo-estilo h2{
+        width: 100%;
+        margin-top:90px;
+        text-align:start
+    }
+
+    .estilo{
+        font-size: 14px;
+    }
+
+    .container-imagen-estilo{
+        margin-bottom: 30px;
+    }
+
+    .titulo-calidad h2{
+        width: 100%;
+        margin-top:90px
+    }
+
+    .calidad{
+        font-size: 14px;
+    }
+
+    .imagen-container-calidad{
+        margin-bottom: 30px;
+    }
+
+    .no-aceptamos{
+        font-size: 14px;
+    }
+
+    .container-imagen-no-aceptamos img{
+        width: 100%;
+    }
+
+    .container-donaciones{
+        margin:60px 20px 20px 20px;
+        grid-template-areas:
+        "tituloDonaciones tituloDonaciones"
+        "donaciones donaciones"
+        "imagenDonaciones imagenDonaciones";
+        grid-template-columns: 1fr;
+        
+    }
+
+    .donaciones{
+        font-size: 14px;
+    }
+
+    .container-cobrar{
+        margin:60px 20px 20px 20px;
+        grid-template-areas: 
+        "tituloCobrar tituloCobrar"
+        "cobrar cobrar"
+        "imagenCobrar imagenCobra"
+        "tituloConsignacion tituloConsignacion"
+        "consignacion consignacion"
+        "tituloCredito tituloCredito"
+        "credito credito"
+        "tituloCompromiso tituloCompromiso"
+        "compromiso compromiso";
+        grid-template-columns:1fr
+    }
+
+
+    /*---------Compras Responsive-----------------------------------------------------------------------*/
+    .header-tienda h1{
+        font-size: 24px;
+    }
+
+    .container-items{
+        grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+        gap:10px
+    }
+
+    .item img{
+        height: 100px;
+    }
+
+    .item:hover{
+        box-shadow: 0 0 1px var(--color-rosa);
+    }
+
+    .info-product h2{
+        font-size: 10px;
+        height: 30px;
+        margin:0
+    }
+
+    .price{
+        font-size: 10px;
+    }
+
+    .info-product button{
+        font-size: 10px;
+        padding: 0;
+        height: 20px;
+    }
+
+    .container-cart-products{
+        width: 250px;
+    }
+
+    .cart-empty{
+        font-size: 12px;
+    }
+
+    .titulo-producto-carrito{
+        font-size: 12px;
+    }
+
+    .precio-producto-carrito{
+        font-size: 12px;
+    }
+
+    .total-pagar{
+        font-size: 15px;
+    }
+
+    .a-menu{
+        font-size: 13px;
+    }
+
+    /*------------Preguntas Responsive--------------------------------------------------------------------------*/
+
+    .li-indice a{
+        font-size: 14px;
+    }
+
+    .preguntas-container{
+        margin:10px;
+        padding: 0;
+        font-size: 15px;
+        grid-template-areas: 
+        "tituloPreguntaMediosDePago tituloPreguntaMediosDePago"
+        "mediosDePago mediosDePago"
+        "imagenesMediosDePago imagenesMediosDePago"
+        "tituloEntregaProductos tituloEntregaProductos"
+        "entregaDeProductos entregaDeProductos"
+        "imagenEntregaProductos imagenEntregaProductos"
+        "tituloEnvios tituloEnvios"
+        "envios envios"
+        "imgEnvios imgEnvios"
+        "tituloPromociones tituloPromociones"
+        "promociones promociones"
+        "imgPromociones imgPromociones"
+        "tituloAtencionAlCliente tituloAtencionAlCliente"
+        "atencionAlCliente atencionAlCliente"
+        "imagenAtencionAlCliente imagenAtencionAlCliente"
+        "tituloCuidadoDePrendas tituloCuidadoDePrendas"
+        "cuidadoDePrendas cuidadoDePrendas"
+        "imagenCuidadoDePrendas imagenCuidadoDePrendas"
+        "tituloProductoDefectuoso tituloProductoDefectuoso"
+        "productoDefectuoso productoDefectuoso"
+        "imagenProductoDefectuoso imagenProductoDefectuoso"
+        "tituloReembolso tituloReembolso"
+        "reembolso reembolso"
+        "imagenReembolso imagenReembolso";
+        grid-template-columns: 1fr;
+    }
+
+    #titulo-pregunta-medios-de-pago h2{
+        width: 100%;
+        text-align: center;
+    }
+
+    #imagen-tarjeta{
+        width: 60px;
+    }
+
+    #imagen-tarjeta-naranja{
+        width: 40px;
+    }
+
+    #imagen-tarjeta-bna{
+        width: 80px;
+    }
+
+    #imagen-tarjeta-americanExpress{
+        width: 40px;
+    }
+
+    #titulo-entrega-productos h2{
+        width: 100%;
+        text-align: center;
+    }
+
+    #titulo-envios h2{
+        width: 100%;
+        text-align: center;
+    }
+
+    #titulo-promociones h2{
+        width: 100%;
+        text-align: center;
+    }
+
+    #titulo-promociones{
+        font-size: 18px;
+    }
+
+    #titulo-atencion-al-cliente{
+        font-size: 18px;
+    }
+
+    #titulo-atencion-al-cliente h2{
+        width: 100%;
+        text-align: center;
+    }
+
+    #titulo-cuidado-de-prendas h2{
+        width: 100%;
+        text-align: center;
+    }
+
+    #titulo-producto-defectuoso h2{
+        width: 100%;
+        text-align: center;
+    }
+
+    #titulo-reembolso h2{
+        width: 100%;
+        text-align: center;
+    }
+
+
+
+    /*------------------Footer Responsive------------------------------------------------------------------*/
+
+    .integrantes{
+        padding: 0;
+        font-size: 11px;
+    }
+
+    .enlaceSitioGrupo{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .enlaceSitioGrupo a{
+        padding: 2px;
+    }
+
+    .trabajoGrupal{
+        font-size: 12px;
+        padding: 10px 10px 0 0
+    }
+
+    .trabajoGrupal h2,h3{
+        font-size: 12px;
+    }
+
+    .imagen-uade{
+        width: 80%;
+    }
+
+    .derechos{
+        font-size: 13px;
     }
 
 }
-
